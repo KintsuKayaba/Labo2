@@ -1,24 +1,34 @@
 # Labo String CLI
 
-Una CLI Node.js per manipolare stringhe: inversione, verifica palindromi, troncamento e conteggio caratteri.
+![Tests](https://github.com/KintsuKayaba/Labo2/blob/main/.github/workflows/ci-coverage.yml/badge.svg)
 
-## Descrizione
+Una CLI Node.js moderna per manipolazione avanzata di stringhe: inversione, verifica palindromi, troncamento e conteggio caratteri.
 
-Questo progetto fornisce una utility da riga di comando per eseguire operazioni comuni sulle stringhe. È pensato come esercizio di best practice per la configurazione, il testing e il workflow Git/GitHub in un contesto Node.js.
+---
 
-## Funzionalità
+## 🚀 Descrizione
 
-- **Inversione stringa**
-- **Verifica palindromo**
-- **Troncamento stringa**
-- **Conteggio caratteri**
+**Labo String CLI** è una utility da riga di comando progettata per eseguire operazioni comuni e utili sulle stringhe, ideale per esercitarsi con best practice di sviluppo Node.js, testing automatizzato e workflow Git/GitHub.
 
-## Requisiti
+---
 
-- Node.js >= 16
-- npm >= 8
+## 🛠️ Funzionalità
 
-## Installazione
+- 🔄 **Inversione stringa**
+- 🔍 **Verifica palindromo**
+- ✂️ **Troncamento stringa**
+- 🔢 **Conteggio caratteri**
+
+---
+
+## 📦 Requisiti
+
+- **Node.js** >= 20
+- **npm** >= 8
+
+---
+
+## ⚡ Installazione
 
 ```bash
 git clone https://github.com/KintsuKayaba/labo-string.git
@@ -26,7 +36,9 @@ cd labo-string
 npm install
 ```
 
-## Utilizzo
+---
+
+## 🖥️ Utilizzo
 
 ```bash
 node index.js <numero_funzione> <stringa_input> [parametro_aggiuntivo]
@@ -34,14 +46,15 @@ node index.js <numero_funzione> <stringa_input> [parametro_aggiuntivo]
 
 ### Opzioni disponibili
 
-| Numero | Funzione            | Parametri aggiuntivi           |
-|--------|---------------------|-------------------------------|
-| 1      | Inverti Stringa     | -                             |
-| 2      | Controlla Palindromo| -                             |
-| 3      | Tronca Stringa      | <lunghezza_massima>           |
-| 4      | Conta Caratteri     | -                             |
+| Numero | Funzione             | Parametri aggiuntivi  |
+| ------ | -------------------- | --------------------- |
+| 1      | Inverti Stringa      | -                     |
+| 2      | Controlla Palindromo | -                     |
+| 3      | Tronca Stringa       | `<lunghezza_massima>` |
+| 4      | Conta Caratteri      | -                     |
 
 **Esempi:**
+
 ```bash
 node index.js 1 "Ciao mondo"
 node index.js 2 "Anna"
@@ -49,7 +62,9 @@ node index.js 3 "Supercalifragilistico" 5
 node index.js 4 "hello"
 ```
 
-## Struttura del progetto
+---
+
+## 📁 Struttura del progetto
 
 ```
 ├── src/
@@ -62,23 +77,36 @@ node index.js 4 "hello"
     └── stringUtils.test.js
 ```
 
-## Testing
+---
 
-I test sono scritti con Jest.
+## 🧪 Testing
+
+I test sono scritti con [Jest](https://jestjs.io/).
 
 ```bash
 npm test
 ```
 
 Per generare il report di coverage:
+
 ```bash
 npm test -- --coverage
 ```
 
-## Contributi
+---
 
-Contributi e segnalazioni sono benvenuti! Apri una issue o una pull request seguendo il flusso GitHub standard.
+## 🤝 Come contribuire
 
-## Licenza
+Contributi, segnalazioni e idee sono benvenuti!  
+Apri una **issue** o una **pull request** seguendo il flusso GitHub standard.
+
+1. Fai fork del progetto
+2. Crea un branch (`git checkout -b feature/nuova-funzionalita`)
+3. Fai commit delle tue modifiche
+4. Push e apri una pull request
+
+---
+
+## 📄 Licenza
 
 UniGE
