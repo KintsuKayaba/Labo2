@@ -1,6 +1,6 @@
 # Labo String CLI
 
-![Tests](https://github.com/KintsuKayaba/Labo2/blob/main/.github/workflows/ci-coverage.yml/badge.svg)
+[![CI Coverage](https://github.com/KintsuKayaba/Labo2/actions/workflows/ci-coverage.yml/badge.svg?branch=main)](https://github.com/KintsuKayaba/Labo2/actions/workflows/ci-coverage.yml)
 
 Una CLI Node.js moderna per manipolazione avanzata di stringhe: inversione, verifica palindromi, troncamento e conteggio caratteri.
 
