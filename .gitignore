@@ -1,19 +1,11 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-
-# Environments
-.env
-.venv
-env/
-venv/
-
-# Distribution / packaging
-build/
+# Node.js
+node_modules/
 dist/
-*.egg-info/
-
-# Unit test / coverage reports
-.coverage
-.pytest_cache/
-htmlcov/
+# VSCode
+.vscode/
+# Mac
+*.DS_Store
+# Test output
+test-output/
+# Jest
+jest-*
