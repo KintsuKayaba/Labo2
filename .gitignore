@@ -9,3 +9,5 @@ dist/
 test-output/
 # Jest
 jest-*
+# Coverage
+coverage/

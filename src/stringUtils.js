@@ -4,7 +4,8 @@
  * @returns {string} - La stringa invertita.
  */
 function reverseString(str) {
-    return str.split('').reverse().join('');
+  // Gestione corretta dei caratteri Unicode (emoji, ecc.)
+  return [...str].reverse().join("");
 }
 
 /**
@@ -13,8 +14,8 @@ function reverseString(str) {
  * @returns {boolean} - True se la stringa è palindroma, altrimenti false.
  */
 function isPalindrome(str) {
-    const cleaned = str.toLowerCase().replace(/\s+/g, '');
-    return cleaned === reverseString(cleaned);
+  const cleaned = str.toLowerCase().replace(/\s+/g, "");
+  return cleaned === reverseString(cleaned);
 }
 
 /**
@@ -24,8 +25,9 @@ function isPalindrome(str) {
  * @returns {string} - La stringa troncata.
  */
 function truncateString(str, maxLength) {
-    if (str.length <= maxLength) return str;
-    return str.slice(0, maxLength) + '...';
+  if (str.length <= maxLength) return str;
+  if (maxLength < 0) return "...";
+  return str.slice(0, maxLength) + "...";
 }
 
 /**
@@ -34,16 +36,16 @@ function truncateString(str, maxLength) {
  * @returns {Object} - Un oggetto con il conteggio dei caratteri.
  */
 function countCharacters(str) {
-    const counts = {};
-    for (const char of str) {
-        counts[char] = (counts[char] || 0) + 1;
-    }
-    return counts;
+  const counts = {};
+  for (const char of str) {
+    counts[char] = (counts[char] || 0) + 1;
+  }
+  return counts;
 }
 
 module.exports = {
-    reverseString,
-    isPalindrome,
-    truncateString,
-    countCharacters,
+  reverseString,
+  isPalindrome,
+  truncateString,
+  countCharacters,
 };
