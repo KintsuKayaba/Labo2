@@ -1,12 +1,34 @@
 {
   "name": "labo-string",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "CLI Node.js per manipolare stringhe: inversione, palindromi, troncamento, conteggio caratteri.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "jest --coverage",
+    "lint": "eslint .",
+    "prepare": "npm run lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "cli",
+    "string",
+    "nodejs",
+    "palindrome",
+    "truncate",
+    "reverse"
+  ],
+  "author": "Gabriele Bestoso",
+  "license": "UniGE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KintsuKayaba/labo-string.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KintsuKayaba/labo-string/issues"
+  },
+  "homepage": "https://github.com/KintsuKayaba/labo-string#readme",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0"
+  }
 }

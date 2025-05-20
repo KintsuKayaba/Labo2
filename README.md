@@ -1,30 +1,84 @@
-# Labo-String: CLI per Utilità su Stringhe
+# Labo String CLI
 
-Questo progetto fornisce una base per una semplice Command-Line Interface (CLI) Node.js che offre diverse utilità per la manipolazione di stringhe.
+Una CLI Node.js per manipolare stringhe: inversione, verifica palindromi, troncamento e conteggio caratteri.
 
-## Nota Importante per lo Studente - Setup Iniziale del Progetto
+## Descrizione
 
-Benvenuto/a a `labo-string`!
+Questo progetto fornisce una utility da riga di comando per eseguire operazioni comuni sulle stringhe. È pensato come esercizio di best practice per la configurazione, il testing e il workflow Git/GitHub in un contesto Node.js.
 
-Questo repository è un **template di partenza** per il tuo laboratorio valutato. Come avrai modo di leggere nelle istruzioni del laboratorio, una parte fondamentale del tuo lavoro iniziale (Esercizio 1) consisterà nell'analizzare attentamente la struttura e la configurazione corrente di questo progetto.
+## Funzionalità
 
-**Potresti notare che alcuni aspetti della configurazione iniziale – inclusa questa stessa documentazione (`README.md`), il file `package.json` e la gestione dei file da ignorare (`.gitignore`) – sono stati volutamente lasciati incompleti o potrebbero non seguire tutte le best practice per un progetto Node.js.**
+- **Inversione stringa**
+- **Verifica palindromo**
+- **Troncamento stringa**
+- **Conteggio caratteri**
 
-Il tuo primo compito sarà proprio quello di identificare queste aree di miglioramento e apportare le necessarie correzioni e completamenti, come dettagliato nelle istruzioni del laboratorio, per portare il progetto a uno standard qualitativo superiore.
+## Requisiti
 
-Buona analisi e buon lavoro!
+- Node.js >= 16
+- npm >= 8
 
-## Funzionalità Principali (Previste)
+## Installazione
 
-* Inversione di una stringa.
-* Verifica se una stringa è palindroma.
-* Troncamento di una stringa a una lunghezza massima specificata.
-* Conteggio delle occorrenze di ciascun carattere in una stringa.
+```bash
+git clone https://github.com/KintsuKayaba/labo-string.git
+cd labo-string
+npm install
+```
 
-## Installazione e Avvio
+## Utilizzo
 
-*(Questa sezione dovrà essere completata dallo studente come parte dell'Esercizio 1, includendo i comandi per installare le dipendenze ed eseguire l'applicazione e i test).*
+```bash
+node index.js <numero_funzione> <stringa_input> [parametro_aggiuntivo]
+```
 
----
+### Opzioni disponibili
 
-*Suggerimento: Presta particolare attenzione ai requisiti dell'Esercizio 1 del laboratorio per completare e correggere questo README e gli altri file di configurazione.*
+| Numero | Funzione            | Parametri aggiuntivi           |
+|--------|---------------------|-------------------------------|
+| 1      | Inverti Stringa     | -                             |
+| 2      | Controlla Palindromo| -                             |
+| 3      | Tronca Stringa      | <lunghezza_massima>           |
+| 4      | Conta Caratteri     | -                             |
+
+**Esempi:**
+```bash
+node index.js 1 "Ciao mondo"
+node index.js 2 "Anna"
+node index.js 3 "Supercalifragilistico" 5
+node index.js 4 "hello"
+```
+
+## Struttura del progetto
+
+```
+├── src/
+│   └── stringUtils.js
+├── index.js
+├── package.json
+├── .gitignore
+├── README.md
+└── test/
+    └── stringUtils.test.js
+```
+
+## Testing
+
+I test sono scritti con Jest.
+
+```bash
+npm test
+```
+
+Per generare il report di coverage:
+```bash
+npm test -- --coverage
+```
+
+## Contributi
+
+Contributi e segnalazioni sono benvenuti! Apri una issue o una pull request seguendo il flusso GitHub standard.
+
+## Licenza
+
+UniGE
